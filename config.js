@@ -33,22 +33,22 @@ global.sudoUsers = process.env.SUDO_USERS.split(',').map(user => `${user}@s.what
 global.public = process.env.PUBLIC === 'true';
 
 global.ANTIDELETE = process.env.ANTIDELETE === 'true';
-global.unavailable = process.env.UNAVAILABLE === 'true';
+global.unavailable = process.env.UNAVAILABLE === 'false';
 global.available = process.env.AVAILABLE === 'true';
-global.autoreadmessages = process.env.AUTO_READ_MESSAGES === 'true';
-global.chatbot = process.env.CHATBOT === 'true';
-global.autoreact = process.env.AUTO_REACT === 'true';
+global.autoreadmessages = process.env.AUTO_READ_MESSAGES === 'false';
+global.chatbot = process.env.CHATBOT === 'false';
+global.autoreact = process.env.AUTO_REACT === 'false';
 
-global.WELCOME = process.env.WELCOME === 'true';
+global.WELCOME = process.env.WELCOME === 'false';
 
 global.prefix = process.env.PREFIX || '.';
 
-global.autobio = process.env.AUTO_BIO === 'true';
+global.autobio = process.env.AUTO_BIO === 'false';
 
-global.ANTICALL = process.env.ANTICALL === 'true';
+global.ANTICALL = process.env.ANTICALL === 'false';
 
 global.antilink = process.env.ANTILINK === 'true';
-global.antilinkkick = process.env.ANTILINK_KICK === 'true';
+global.antilinkkick = process.env.ANTILINK_KICK === 'false';
 global.antilinkwarn = process.env.ANTILINK_WARN === 'true';
 
 global.mess = {
